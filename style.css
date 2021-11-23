@@ -21,6 +21,12 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .form > * + * {
   margin-top: 1rem;
 }

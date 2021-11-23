@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="se">
   <head>
+    <title>Accessibility 101</title>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accessibility 101</title>
   </head>
+
   <body>
     <div class="container">
-      <h1>Accessibility 101</h1>
-      <p>TODO: Make me inaccessible</p>
-
+      <header id="header" class="header">
+        <h1>Accessibility 101</h1>
+        <img
+          alt="Accessibility icon"
+          src="/public/accessibility.png"
+          width="50"
+          height="50"
+        />
+      </header>
+      <h2 id="header">You will learn:</h2>
+      <ul>
+        <li>Correct semantics</li>
+        <li>Design for keyboard</li>
+        <li>ARIA</li>
+      </ul>
+      <h3>Contact form</h3>
       <div class="form">
         <div class="form-field">
           <label for="firstName">First Name</label>
@@ -18,6 +32,7 @@
         </div>
         <div class="form-field">
           <label for="lastName">Last Name</label>
+
           <input id="lastName" />
         </div>
         <div class="form-field">
@@ -36,7 +51,7 @@
           <input id="rememberMe" type="checkbox" />
         </div>
         <div class="submit-container">
-          <button class="btn">
+          <button class="btn" id="sendFormButton">
             Send form
             <svg
               stroke="currentColor"
